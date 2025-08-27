@@ -62,3 +62,7 @@ def role_counts(agents: List[str]) -> Dict[str, int]:
         if role in counts:
             counts[role] += 1
     return counts
+
+# Canonical list of agent names (normalized) for feature engineering
+AGENTS = sorted(AGENT_ROLE.keys())
+
